@@ -12,9 +12,6 @@
   },
   "dependencies": {
     "@ant-design/pro-components": "^2.6.4",
-    "@types/node": "20.3.3",
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
     "antd": "^5.6.4",
     "autoprefixer": "10.4.14",
     "eslint": "8.44.0",
@@ -29,9 +26,16 @@
   "devDependencies": {
     "@ant-design/cssinjs": "^1.11.1",
     "@ant-design/static-style-extract": "^1.0.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
+    "@types/node": "20.3.3",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
     "cross-env": "^7.0.3",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-tailwindcss": "^3.13.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.0"
   }
