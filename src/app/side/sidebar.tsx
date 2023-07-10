@@ -1,7 +1,7 @@
 "use client";
 
+import { Button, ConfigProvider, Input } from "antd";
 import { createContext, useContext, useState } from "react";
-import { Button } from "antd";
 
 // @ts-ignore
 const SidebarContext = createContext();
@@ -23,7 +23,15 @@ function SidebarNav() {
     <div>
       <p>Home</p>
 
-      {isOpen && <Button type="primary">按钮</Button>}
+      {isOpen && (
+        // 修改组件变量 (Component Token)
+        <ConfigProvider
+          theme={{ components: { Button: { colorPrimary: "red" } } }}
+        >
+          <Input.TextArea value={"测试testarea"} />
+          <Button type="primary">按钮</Button>
+        </ConfigProvider>
+      )}
     </div>
   );
 }

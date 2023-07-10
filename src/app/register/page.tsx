@@ -8,7 +8,6 @@ import {
   Col,
   Form,
   Input,
-  InputNumber,
   Row,
   Select,
 } from "antd";
