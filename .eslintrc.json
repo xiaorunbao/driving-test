@@ -1,13 +1,5 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "react-app",
-    "plugin:tailwindcss/recommended",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
-    "prettier"
-  ],
+  "extends": ["next/core-web-vitals", "prettier", "plugin:tailwindcss/recommended"],
   "plugins": ["tailwindcss", "eslint-plugin-react", "prettier"],
   "rules": {
     "@next/next/no-html-link-for-pages": "off",

@@ -2,7 +2,7 @@
 
 import { LockOutlined, MobileOutlined, UserOutlined } from '@ant-design/icons';
 import { LoginForm, ProConfigProvider, ProFormCaptcha, ProFormCheckbox, ProFormText } from '@ant-design/pro-components';
-import { Tabs, message } from 'antd';
+import { message, Tabs } from 'antd';
 import type { CSSProperties } from 'react';
 import { useState } from 'react';
 
