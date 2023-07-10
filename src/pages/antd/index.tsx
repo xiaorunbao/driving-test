@@ -1,17 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import {
-  Button,
-  DatePicker,
-  Divider,
-  Form,
-  InputNumber,
-  Rate,
-  Select,
-  Slider,
-  Space,
-  Switch,
-  Typography,
-} from "antd";
+import { Button, DatePicker, Divider, Form, InputNumber, Rate, Select, Slider, Space, Switch, Typography } from 'antd';
 
 const { Option } = Select;
 const { Title } = Typography;
@@ -19,7 +7,7 @@ const { Title } = Typography;
 export default function Home() {
   return (
     <>
-      <section style={{ textAlign: "center", marginTop: 48, marginBottom: 40 }}>
+      <section style={{ textAlign: 'center', marginTop: 48, marginBottom: 40 }}>
         <Space align="start">
           <img
             style={{ width: 40, height: 40 }}

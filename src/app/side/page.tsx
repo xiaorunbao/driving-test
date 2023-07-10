@@ -1,5 +1,4 @@
-import React from "react";
-import { Sidebar } from "./sidebar";
+import { Sidebar } from './sidebar';
 
 export default function page() {
   return <Sidebar />;

@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { Typography } from "antd";
-import { Metadata } from "next";
+import { Typography } from 'antd';
+import { Metadata } from 'next';
 
-export const metadata: Metadata = { title: "科目一" };
+export const metadata: Metadata = { title: '科目一' };
 
 export default function page() {
   return (

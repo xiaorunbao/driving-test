@@ -1,17 +1,13 @@
-"use client";
+'use client';
 
-import { StyleProvider, createCache, extractStyle } from "@ant-design/cssinjs";
-import { ConfigProvider } from "antd";
-import "antd/dist/reset.css";
-import { useServerInsertedHTML } from "next/navigation";
-import { useState } from "react";
-import "styles/globals.css";
+import { StyleProvider, createCache, extractStyle } from '@ant-design/cssinjs';
+import { ConfigProvider } from 'antd';
+import 'antd/dist/reset.css';
+import { useServerInsertedHTML } from 'next/navigation';
+import { useState } from 'react';
+import 'styles/globals.css';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="it">
       <head />
@@ -30,7 +26,7 @@ function StyleProviderLayout({ children }: { children: React.ReactNode }) {
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: "green",
+          colorPrimary: 'green',
         },
       }}
     >
@@ -48,7 +44,7 @@ function StyleProviderLayout({ children }: { children: React.ReactNode }) {
     );
   });
 
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     return render;
   }
 

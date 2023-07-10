@@ -1,48 +1,38 @@
-"use client";
+'use client';
 
-import {
-  AutoComplete,
-  Button,
-  Cascader,
-  Checkbox,
-  Col,
-  Form,
-  Input,
-  Row,
-  Select,
-} from "antd";
-import { useState } from "react";
+import { AutoComplete, Button, Cascader, Checkbox, Col, Form, Input, Row, Select } from 'antd';
+import { useState } from 'react';
 
 const { Option } = Select;
 
 const residences = [
   {
-    value: "zhejiang",
-    label: "Zhejiang",
+    value: 'zhejiang',
+    label: 'Zhejiang',
     children: [
       {
-        value: "hangzhou",
-        label: "Hangzhou",
+        value: 'hangzhou',
+        label: 'Hangzhou',
         children: [
           {
-            value: "xihu",
-            label: "West Lake",
+            value: 'xihu',
+            label: 'West Lake',
           },
         ],
       },
     ],
   },
   {
-    value: "jiangsu",
-    label: "Jiangsu",
+    value: 'jiangsu',
+    label: 'Jiangsu',
     children: [
       {
-        value: "nanjing",
-        label: "Nanjing",
+        value: 'nanjing',
+        label: 'Nanjing',
         children: [
           {
-            value: "zhonghuamen",
-            label: "Zhong Hua Men",
+            value: 'zhonghuamen',
+            label: 'Zhong Hua Men',
           },
         ],
       },
@@ -62,7 +52,7 @@ export default function Page() {
   const [form] = Form.useForm();
 
   const onFinish = (values: any) => {
-    console.log("Received values of form: ", values);
+    console.log('Received values of form: ', values);
   };
 
   const prefixSelector = (
@@ -89,9 +79,7 @@ export default function Page() {
     if (!value) {
       setAutoCompleteResult([]);
     } else {
-      setAutoCompleteResult(
-        [".com", ".org", ".net"].map((domain) => `${value}${domain}`)
-      );
+      setAutoCompleteResult(['.com', '.org', '.net'].map((domain) => `${value}${domain}`));
     }
   };
 
@@ -107,8 +95,8 @@ export default function Page() {
       name="register"
       onFinish={onFinish}
       initialValues={{
-        residence: ["zhejiang", "hangzhou", "xihu"],
-        prefix: "86",
+        residence: ['zhejiang', 'hangzhou', 'xihu'],
+        prefix: '86',
       }}
       scrollToFirstError
       style={{ maxWidth: 960 }}
@@ -118,12 +106,12 @@ export default function Page() {
         label="E-mail"
         rules={[
           {
-            type: "email",
-            message: "The input is not valid E-mail!",
+            type: 'email',
+            message: 'The input is not valid E-mail!',
           },
           {
             required: true,
-            message: "Please input your E-mail!",
+            message: 'Please input your E-mail!',
           },
         ]}
       >
@@ -136,7 +124,7 @@ export default function Page() {
         rules={[
           {
             required: true,
-            message: "Please input your password!",
+            message: 'Please input your password!',
           },
         ]}
         hasFeedback
@@ -147,21 +135,19 @@ export default function Page() {
       <Form.Item
         name="confirm"
         label="Confirm Password"
-        dependencies={["password"]}
+        dependencies={['password']}
         hasFeedback
         rules={[
           {
             required: true,
-            message: "Please confirm your password!",
+            message: 'Please confirm your password!',
           },
           ({ getFieldValue }) => ({
             validator(_, value) {
-              if (!value || getFieldValue("password") === value) {
+              if (!value || getFieldValue('password') === value) {
                 return Promise.resolve();
               }
-              return Promise.reject(
-                new Error("The two passwords that you entered do not match!")
-              );
+              return Promise.reject(new Error('The two passwords that you entered do not match!'));
             },
           }),
         ]}
@@ -176,7 +162,7 @@ export default function Page() {
         rules={[
           {
             required: true,
-            message: "Please input your nickname!",
+            message: 'Please input your nickname!',
             whitespace: true,
           },
         ]}
@@ -189,9 +175,9 @@ export default function Page() {
         label="Habitual Residence"
         rules={[
           {
-            type: "array",
+            type: 'array',
             required: true,
-            message: "Please select your habitual residence!",
+            message: 'Please select your habitual residence!',
           },
         ]}
       >
@@ -201,30 +187,18 @@ export default function Page() {
       <Form.Item
         name="phone"
         label="Phone Number"
-        rules={[{ required: true, message: "Please input your phone number!" }]}
+        rules={[{ required: true, message: 'Please input your phone number!' }]}
       >
-        <Input addonBefore={prefixSelector} style={{ width: "100%" }} />
+        <Input addonBefore={prefixSelector} style={{ width: '100%' }} />
       </Form.Item>
 
-      <Form.Item
-        name="website"
-        label="Website"
-        rules={[{ required: true, message: "Please input website!" }]}
-      >
-        <AutoComplete
-          options={websiteOptions}
-          onChange={onWebsiteChange}
-          placeholder="website"
-        >
+      <Form.Item name="website" label="Website" rules={[{ required: true, message: 'Please input website!' }]}>
+        <AutoComplete options={websiteOptions} onChange={onWebsiteChange} placeholder="website">
           <Input />
         </AutoComplete>
       </Form.Item>
 
-      <Form.Item
-        name="gender"
-        label="Gender"
-        rules={[{ required: true, message: "Please select gender!" }]}
-      >
+      <Form.Item name="gender" label="Gender" rules={[{ required: true, message: 'Please select gender!' }]}>
         <Select placeholder="select your gender">
           <Option value="male">Male</Option>
           <Option value="female">Female</Option>
@@ -232,10 +206,7 @@ export default function Page() {
         </Select>
       </Form.Item>
 
-      <Form.Item
-        label="Captcha"
-        extra="We must make sure that your are a human."
-      >
+      <Form.Item label="Captcha" extra="We must make sure that your are a human.">
         <Row gutter={8}>
           <Col span={12}>
             <Form.Item
@@ -244,7 +215,7 @@ export default function Page() {
               rules={[
                 {
                   required: true,
-                  message: "Please input the captcha you got!",
+                  message: 'Please input the captcha you got!',
                 },
               ]}
             >
@@ -262,10 +233,7 @@ export default function Page() {
         valuePropName="checked"
         rules={[
           {
-            validator: (_, value) =>
-              value
-                ? Promise.resolve()
-                : Promise.reject(new Error("Should accept agreement")),
+            validator: (_, value) => (value ? Promise.resolve() : Promise.reject(new Error('Should accept agreement'))),
           },
         ]}
         {...tailFormItemLayout}
