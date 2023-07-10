@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "../../public/antd.min.css";
+import "../../styles/Home.module.css";
 import ThemeProvider from "./theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });

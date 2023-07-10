@@ -11,6 +11,7 @@
     "prebuild": "cross-env NODE_ENV=production ts-node --project ./tsconfig.node.json ./scripts/genAntdCss.tsx"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.1.4",
     "@ant-design/pro-components": "^2.6.4",
     "antd": "^5.6.4",
     "autoprefixer": "10.4.14",
@@ -20,6 +21,7 @@
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "server-only": "^0.0.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
   },
@@ -34,7 +36,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "prettier": "^3.0.0",
+    "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.0"
