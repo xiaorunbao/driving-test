@@ -1,6 +1,6 @@
 'use client';
 
-import { StyleProvider, createCache, extractStyle } from '@ant-design/cssinjs';
+import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
 import { ConfigProvider } from 'antd';
 import 'antd/dist/reset.css';
 import { useServerInsertedHTML } from 'next/navigation';
