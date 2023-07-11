@@ -29,6 +29,8 @@
   "devDependencies": {
     "@ant-design/cssinjs": "^1.11.1",
     "@ant-design/static-style-extract": "^1.0.1",
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
     "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
