@@ -3,8 +3,6 @@ export interface User {
   name: string;
   /* 中文姓名 */
   cnName: string;
-  /* 密码 */
-  password: string;
   /* 部门 */
   department?: string;
   /* 角色列表 */
