@@ -82,6 +82,9 @@ devDependencies:
   eslint-plugin-tailwindcss:
     specifier: ^3.13.0
     version: registry.npmmirror.com/eslint-plugin-tailwindcss@3.13.0(tailwindcss@3.3.2)
+  husky:
+    specifier: ^8.0.3
+    version: registry.npmmirror.com/husky@8.0.3
   prettier:
     specifier: ^2.8.8
     version: registry.npmmirror.com/prettier@2.8.8
@@ -2885,6 +2888,14 @@ packages:
     version: 4.3.1
     engines: {node: '>=14.18.0'}
     dev: false
+
+  registry.npmmirror.com/husky@8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/husky/-/husky-8.0.3.tgz}
+    name: husky
+    version: 8.0.3
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   registry.npmmirror.com/ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ignore/-/ignore-5.2.4.tgz}
