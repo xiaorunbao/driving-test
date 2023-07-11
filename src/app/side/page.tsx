@@ -1,5 +1,5 @@
 import { Sidebar } from './sidebar';
 
-export default function page() {
+export default function Page() {
   return <Sidebar />;
 }

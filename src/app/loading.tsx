@@ -1,7 +1,7 @@
 'use client';
 
-import { Skeleton } from 'antd';
+import { Spin } from 'antd';
 
 export default function Loading() {
-  return <Skeleton />;
+  return <Spin size="large" />;
 }
