@@ -11,7 +11,9 @@
     "prebuild": "cross-env NODE_ENV=production ts-node --project ./tsconfig.node.json ./scripts/genAntdCss.tsx",
     "prepare": "husky install",
     "commit": "cz",
-    "release": "release-it"
+    "release": "standard-version",
+    "release-major": "standard-version --release-as major",
+    "release-patch": "standard-version --release-as patch"
   },
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
@@ -34,7 +36,6 @@
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
     "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
-    "@release-it/conventional-changelog": "^7.0.0",
     "@types/lodash": "^4.14.195",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
@@ -50,13 +51,8 @@
     "husky": "^8.0.3",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "release-it": "^16.1.2",
+    "standard-version": "^9.5.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
