@@ -1,8 +1,8 @@
 'use client';
 
 import { Space, Table, Tag } from 'antd';
-import { Metadata } from 'next';
 import { ColumnsType } from 'antd/es/table';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = { title: '科目一' };
 
