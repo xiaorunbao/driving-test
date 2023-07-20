@@ -43,7 +43,6 @@ export default function AntdProLayout({ children }: { children: React.ReactNode 
             <Link href={item.path || '/'}>{dom}</Link>
           </div>
         )}
-        contentWidth="Fixed"
         layout="mix"
         navTheme="light"
         fixedHeader={true}

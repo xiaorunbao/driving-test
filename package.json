@@ -54,5 +54,10 @@
     "standard-version": "^9.5.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
