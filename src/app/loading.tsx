@@ -1,7 +1,7 @@
 'use client';
 
-import { Spin } from 'antd';
+import { PageLoading } from '@ant-design/pro-components';
 
 export default function Loading() {
-  return <Spin size="large" />;
+  return <PageLoading />;
 }

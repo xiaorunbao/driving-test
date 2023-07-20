@@ -1,4 +1,7 @@
-import StyleProviderLayout from './style-provider';
+import StyleProviderLayout from './components/provider/style-provider';
+
+import '../styles/globals.css';
+import 'antd/dist/reset.css';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

@@ -1,30 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ConfigProvider } from 'antd';
 import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
-
-import 'antd/dist/reset.css';
-
 import { useServerInsertedHTML } from 'next/navigation';
 
-import 'styles/globals.css';
+import AntdConfigProvider from './config-provider';
 
 export default function StyleProviderLayout({ children }: { children: React.ReactNode }) {
   const [cache] = useState(() => createCache());
   // 修改主题变量
-
-  const render = (
-    <ConfigProvider
-      theme={{
-        token: {
-          colorPrimary: 'green',
-        },
-      }}
-    >
-      {children}
-    </ConfigProvider>
-  );
+  const render = <AntdConfigProvider>{children}</AntdConfigProvider>;
 
   useServerInsertedHTML(() => {
     return (
@@ -40,5 +25,9 @@ export default function StyleProviderLayout({ children }: { children: React.Reac
     return render;
   }
 
-  return <StyleProvider cache={cache}>{render}</StyleProvider>;
+  return (
+    <StyleProvider hashPriority="high" cache={cache}>
+      {render}
+    </StyleProvider>
+  );
 }
