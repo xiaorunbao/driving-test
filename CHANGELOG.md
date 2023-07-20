@@ -1,6 +1,30 @@
 # 更新历史 
 
 
+### [0.1.3](https://github.com/xiaorunbao/driving-test/compare/v0.1.1...v0.1.3) (2023-07-20)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* fix changelog plugin ([c4536a5](https://github.com/xiaorunbao/driving-test/commit/c4536a51b9324c5ed40b7430e067ac82cac85b85))
+
+
+### ✨ Features | 新功能
+
+* add SSR style for antd5 ([1d91fa3](https://github.com/xiaorunbao/driving-test/commit/1d91fa37e89ab18d8e83e8e0ad22da61620d5b06))
+* **custom:** add customer commit plugin ([09c4988](https://github.com/xiaorunbao/driving-test/commit/09c498891761902f5b768b1de4fde6e97bba9bf0))
+
+
+### 📦 Chores | 其他更新
+
+* **custom:** update changelog ([f0d64cd](https://github.com/xiaorunbao/driving-test/commit/f0d64cd12d0229bd02d533c610ed580707513c4c))
+* **release:** 0.1.2 ([45812c4](https://github.com/xiaorunbao/driving-test/commit/45812c486ebf8ddfaf3cd46b7266f74eb4f2eabd))
+
+
+### ⏪ Reverts | 回退
+
+* revert customer commit plugin ([f4f0d23](https://github.com/xiaorunbao/driving-test/commit/f4f0d238d4b3d492454b79e5ba27ee7f3b67ad59))
+
 ### [0.1.2](https://github.com/xiaorunbao/driving-test/compare/v0.1.1...v0.1.2) (2023-07-20)
 
 
