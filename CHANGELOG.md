@@ -1,6 +1,23 @@
-# Changelog
+# 更新历史 
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.1.2](https://github.com/xiaorunbao/driving-test/compare/v0.1.1...v0.1.2) (2023-07-20)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* fix changelog plugin ([c4536a5](https://github.com/xiaorunbao/driving-test/commit/c4536a51b9324c5ed40b7430e067ac82cac85b85))
+
+
+### ✨ Features | 新功能
+
+* add SSR style for antd5 ([1d91fa3](https://github.com/xiaorunbao/driving-test/commit/1d91fa37e89ab18d8e83e8e0ad22da61620d5b06))
+* **custom:** add customer commit plugin ([09c4988](https://github.com/xiaorunbao/driving-test/commit/09c498891761902f5b768b1de4fde6e97bba9bf0))
+
+
+### 📦 Chores | 其他更新
+
+* **custom:** update changelog ([f0d64cd](https://github.com/xiaorunbao/driving-test/commit/f0d64cd12d0229bd02d533c610ed580707513c4c))
 
 ### 0.1.1 (2023-07-18)
 
