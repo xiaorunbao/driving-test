@@ -22,7 +22,7 @@ export default function AntdProLayout({ children }: { children: React.ReactNode 
         }}
         avatarProps={{
           src: 'https://gw.alipayobjects.com/zos/antfincdn/efFD%24IOql2/weixintupian_20170331104822.jpg',
-          title: '七妮妮',
+          title: '黄飞鸿',
           size: 'small',
         }}
         actionsRender={(props) => {

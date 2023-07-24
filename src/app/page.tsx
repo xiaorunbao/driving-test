@@ -19,6 +19,7 @@ async function getUser(id: string) {
 export default async function Page() {
   const user: User = await getUser('643f9f912ccf17fe6c91af94');
   console.log('user', user);
+  // 登录过的跳转登录页面，没有登录过跳转登录页面
   if (isEmpty(user)) redirect('/login');
-  return <h1 className="text-green-600">{`Hello, ${user.name}`}</h1>;
+  redirect('side');
 }

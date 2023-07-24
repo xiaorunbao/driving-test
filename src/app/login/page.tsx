@@ -1,10 +1,12 @@
 'use client';
 
-import { LockOutlined, MobileOutlined, UserOutlined } from '@ant-design/icons';
-import { LoginForm, ProConfigProvider, ProFormCaptcha, ProFormCheckbox, ProFormText } from '@ant-design/pro-components';
-import { message, Tabs } from 'antd';
 import type { CSSProperties } from 'react';
 import { useState } from 'react';
+import { message, Tabs } from 'antd';
+import { LockOutlined, MobileOutlined, UserOutlined } from '@ant-design/icons';
+import { LoginForm, ProConfigProvider, ProFormCaptcha, ProFormCheckbox, ProFormText } from '@ant-design/pro-components';
+
+import 'antd/dist/reset.css';
 
 type LoginType = 'phone' | 'account';
 
@@ -20,7 +22,7 @@ export default function Page() {
   const [loginType, setLoginType] = useState<LoginType>('phone');
   return (
     <ProConfigProvider hashed={false}>
-      <div style={{ backgroundColor: 'white' }}>
+      <div className="bg-green">
         <LoginForm
           logo="/Octocat.png"
           title="Github"

@@ -1,4 +1,4 @@
-import { Sidebar } from '@/app/side/sidebar';
+import { Sidebar } from '@/app/(dashboard)/side/sidebar';
 import { ChromeFilled, CrownFilled, SmileFilled, TabletFilled } from '@ant-design/icons';
 
 // eslint-disable-next-line import/no-anonymous-default-export

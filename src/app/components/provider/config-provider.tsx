@@ -11,7 +11,7 @@ export default function AntdConfigProvider({ children }: { children: React.React
   // TODO 集成redux
   return (
     <ConfigProvider theme={themeConfig} locale={zhCN}>
-      <AntdProLayout>{children}</AntdProLayout>
+      <>{children}</>
     </ConfigProvider>
   );
 }
