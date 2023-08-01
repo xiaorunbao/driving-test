@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { GithubFilled, InfoCircleFilled, QuestionCircleFilled } from '@ant-design/icons';
 import { PageContainer, ProCard, ProLayout } from '@ant-design/pro-components';
 import Link from 'next/link';
+import styled from 'styled-components';
 
 import defaultProps from './_defaultProps';
 
@@ -15,7 +16,7 @@ export default function AntdProLayout({ children }: { children: React.ReactNode 
 
   return (
     <div id="test-pro-layout" style={{ height: '100vh' }}>
-      <ProLayout
+      <StyledProLayout
         {...defaultProps}
         location={{
           pathname,
@@ -50,9 +51,19 @@ export default function AntdProLayout({ children }: { children: React.ReactNode 
         collapsed={false}
       >
         <PageContainer>
-          <ProCard style={{ height: '100vh' }}>{children}</ProCard>
+          <StyledProCard>{children}</StyledProCard>
         </PageContainer>
-      </ProLayout>
+      </StyledProLayout>
     </div>
   );
 }
+
+const StyledProCard = styled(ProCard)`
+  height: 100vh;
+`;
+
+const StyledProLayout = styled(ProLayout)`
+  .ant-pro-sider-collapsed-button {
+    display: none;
+  }
+`;

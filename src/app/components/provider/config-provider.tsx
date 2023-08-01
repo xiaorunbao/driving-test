@@ -5,13 +5,15 @@ import { ConfigProvider } from 'antd';
 import zhCN from 'antd/es/locale/zh_CN';
 
 import themeConfig from '../../../../theme/theme-config';
-import AntdProLayout from '../layout/pro-layout';
+import StyledComponentsProvider from './styled-components-provider';
 
 export default function AntdConfigProvider({ children }: { children: React.ReactNode }) {
   // TODO 集成redux
   return (
     <ConfigProvider theme={themeConfig} locale={zhCN}>
-      <>{children}</>
+      <StyledComponentsProvider>
+        <>{children}</>
+      </StyledComponentsProvider>
     </ConfigProvider>
   );
 }
