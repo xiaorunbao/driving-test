@@ -47,7 +47,7 @@ export default function AntdProLayout({ children }: { children: React.ReactNode 
         navTheme="light"
         fixedHeader={true}
         fixSiderbar={true}
-        defaultCollapsed={true}
+        collapsed={false}
       >
         <PageContainer>
           <ProCard style={{ height: '100vh' }}>{children}</ProCard>
